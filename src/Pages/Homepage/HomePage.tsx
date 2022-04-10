@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer/Footer";
 import HeaderContent from "../../Components/Header/HeaderContent";
 
 import Navbar from "../../Components/Navbar";
@@ -12,9 +12,7 @@ function HomePage() {
       <div className="homepage__header">
         <HeaderContent />
       </div>
-      <div className="homepage__footer">
         <Footer />
-      </div>
     </div>
   );
 }

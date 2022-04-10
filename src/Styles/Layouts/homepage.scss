@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  position: relative;
 
   &__header {
     display: flex;
@@ -17,17 +18,4 @@
     background-size: 100% 100%;
     object-fit: cover;
   }
-
-  &__footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    height: 400px;
-    width: 100%;
-    background-color: pink;
-  }
-
-
 }

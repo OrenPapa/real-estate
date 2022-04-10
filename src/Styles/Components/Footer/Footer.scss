@@ -1,0 +1,57 @@
+@import "../../Variables/varialbes.scss";
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+
+  &__upper-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    background-color: $color-blue;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__separator {
+    height: 150px;
+    width: 2px;
+    background-color: white;
+  }
+
+  &__content-container {
+    width: 70%;
+    height: 100%;
+  }
+
+  &__social-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  &__lower-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background-color: $primary-color;
+    font-family: $font-inter;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 30px;
+  }
+}

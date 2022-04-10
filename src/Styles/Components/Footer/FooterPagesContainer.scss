@@ -1,0 +1,29 @@
+@import "../../Variables/varialbes.scss";
+
+.footer-pages-container {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-family: $font-inter;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+  }
+
+  &__pages-container{
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+  }
+
+  &__page {
+    font-family: $font-inter;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+}

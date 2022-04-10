@@ -1,0 +1,110 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2;
+
+  &__left-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+  }
+
+  &__logo {
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+  }
+
+  &__menu-item {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: 300ms ease-out;
+    transition-property: background-color, color;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px white solid;
+    }
+  }
+
+  &__right-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    height: 100%;
+    width: 270px;
+  }
+
+  &__action-button {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 2px white;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease-out;
+    transition-property: background-color, color;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: rgb(156, 183, 182);
+    }
+  }
+
+  &__auth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__auth-button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: 300ms ease-out;
+    transition-property: background-color, color;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px white solid;
+    }
+  }
+
+  &__auth-separator {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: white;
+  }
+}

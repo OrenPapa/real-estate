@@ -1,0 +1,17 @@
+.homepage {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/1128280.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+  }
+}

@@ -1,7 +1,8 @@
 import React from "react";
-import "../Styles/main.scss";
+import "../../Styles/main.scss";
 import HeaderAddProperty from "./HeaderAddProperty";
 import HeaderSearchArea from "./HeaderSearchArea";
+
 
 function HeaderContent() {
   return (

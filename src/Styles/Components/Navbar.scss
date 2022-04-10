@@ -1,3 +1,5 @@
+@import  "../Variables/varialbes.scss";
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -35,7 +37,7 @@
   }
 
   &__menu-item {
-    font-family: "Inter", sans-serif;
+    font-family: $font-inter;
     font-size: 16px;
     font-weight: 500;
     color: white;
@@ -68,7 +70,7 @@
     justify-content: center;
     transition: 300ms ease-out;
     transition-property: background-color, color;
-    font-family: "Inter", sans-serif;
+    font-family: $font-inter;
     font-size: 14px;
     font-weight: 500;
     color: white;
@@ -87,7 +89,7 @@
   }
 
   &__auth-button {
-    font-family: "Inter", sans-serif;
+    font-family: $font-inter;
     font-size: 16px;
     font-weight: 500;
     color: white;

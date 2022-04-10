@@ -1,5 +1,7 @@
 import React from "react";
-import HeaderSearch from "../../Components/HeaderContent";
+import Footer from "../../Components/Footer";
+import HeaderContent from "../../Components/Header/HeaderContent";
+
 import Navbar from "../../Components/Navbar";
 import "../../Styles/Layouts/homepage.scss";
 
@@ -8,7 +10,10 @@ function HomePage() {
     <div className="homepage">
       <Navbar />
       <div className="homepage__header">
-        <HeaderSearch />
+        <HeaderContent />
+      </div>
+      <div className="homepage__footer">
+        <Footer />
       </div>
     </div>
   );

@@ -3,13 +3,14 @@ import "../../Styles/main.scss";
 import HeaderAddProperty from "./HeaderAddProperty";
 import HeaderSearchArea from "./HeaderSearchArea";
 
-
 function HeaderContent() {
   return (
-    <div className="header-content">
-      <div className="header-content__title">content your next property</div>
-      <HeaderSearchArea />
-      <HeaderAddProperty/>
+    <div className="header">
+      <div className="header__content">
+        <div className="header__content-title">content your next property</div>
+        <HeaderSearchArea />
+        <HeaderAddProperty />
+      </div>
     </div>
   );
 }

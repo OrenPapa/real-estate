@@ -1,0 +1,144 @@
+@import "../../Variables/varialbes.scss";
+@import "../../Mixins/Mixins.scss";
+
+.registration-card {
+  height: 525px;
+  width: 400px;
+  background-color: white;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__upper-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    background-color: $color-blue;
+  }
+
+  &__lower-panel {
+    width: 100%;
+    height: 75%;
+  }
+
+  &__upper-panel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__line {
+    width: 135px;
+    height: 1px;
+    background-color: white;
+  }
+
+  &__text {
+    font-family: $font-inter;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+  }
+
+  &__lower-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  &__large-input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 120px;
+  }
+
+  &__large-input {
+    width: 290px;
+    height: 40px;
+    @include input();
+  }
+
+  &__small-input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 74px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__small-input {
+    @include input();
+    width: 175px;
+    height: 40px;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: 290px;
+  }
+
+  &__checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    transition: all 300ms;
+  }
+
+  &__checkbox-label {
+    color: $color-blue;
+    font-size: 16px;
+    font-family: $font-inter;
+    font-weight: 700;
+  }
+
+  &__button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  &__button {
+    width: 160px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: $secondary-color;
+    color: white;
+    font-size: 16px;
+    font-family: $font-inter;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover {
+      background-color: $secondary-color-hover;
+    }
+  }
+}

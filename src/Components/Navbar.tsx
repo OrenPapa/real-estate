@@ -1,13 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/main.scss";
 import { Icon } from "@iconify/react";
 
 function Navbar() {
+  const [hasColor, setHasColor] = useState(false);
+  const [hasLogoColor, setHasLogoColor] = useState(false);
+
+  const onNavbarColorChange = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 80) {
+      setHasColor(true);
+    } else {
+      setHasColor(false);
+    }
+  };
+
+  const onLogoColorChange = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 80) {
+      setHasLogoColor(true);
+    } else {
+      setHasLogoColor(false);
+    }
+  };
+
+  useEffect(() => {
+    onNavbarColorChange();
+    window.addEventListener("scroll", onNavbarColorChange);
+  });
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${hasColor && "navbar--color-blue"}`}>
       <div className="navbar__left-panel">
         <div className="navbar__logo">
-          <Icon icon="logos:backbone" width="150" height="50" />
+          {hasColor ? (
+            <Icon
+              icon="simple-icons:backbonedotjs"
+              color="white"
+              width="50"
+              height="50"
+            />
+          ) : (
+            <Icon
+              icon="logos:backbone-icon"
+              color="white"
+              width="50"
+              height="50"
+            />
+          )}
         </div>
         <ul className="navbar__menu">
           <li className="navbar__menu-item">Buy</li>

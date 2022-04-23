@@ -4,6 +4,8 @@ import Footer from "../../Components/Footer/Footer";
 import HeaderContent from "../../Components/Header/Header";
 
 import Navbar from "../../Components/Navbar";
+import PartnersSection from "../../Components/PartnersSection/PartnersSection";
+import RegisterSection from "../../Components/Register/RegisterSection";
 import "../../Styles/Layouts/homepage.scss";
 
 function HomePage() {
@@ -12,6 +14,8 @@ function HomePage() {
       <Navbar />
       <HeaderContent />
       <DiscoverCities />
+      <PartnersSection />
+      <RegisterSection />
       <Footer />
     </div>
   );

@@ -1,0 +1,16 @@
+@import "../Variables/varialbes.scss";
+
+@mixin input {
+  border: 1px solid grey;
+  border-radius: 6px;
+  color: $color-blue;
+  font-size: 16px;
+  font-family: $font-inter;
+  font-weight: 500;
+  outline: 0;
+  padding-left: 5px;
+
+  &:focus {
+    border: 1px solid $color-blue;
+  }
+}

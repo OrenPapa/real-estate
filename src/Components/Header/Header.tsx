@@ -7,7 +7,7 @@ function HeaderContent() {
   return (
     <div className="header">
       <div className="header__content">
-        <div className="header__content-title">content your next property</div>
+        <div className="header__content-title">Find your next property</div>
         <HeaderSearchArea />
         <HeaderAddProperty />
       </div>

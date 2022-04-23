@@ -1,8 +1,11 @@
-
 $transition: all 300ms ease-out;
-$opacity-03: rgba($color: #000000, $alpha: 0.3);
+$opacity-03: rgba(
+  $color: #000000,
+  $alpha: 0.3,
+);
 $font-inter: "Inter", sans-serif;
 $secondary-color: orange;
-$primary-color: #050A30;
+$primary-color: #050a30;
 $filter-brightness: brightness(1.1);
 $color-blue: #0a1461;
+$hover-color: rgba(188, 188, 188, 0.2);

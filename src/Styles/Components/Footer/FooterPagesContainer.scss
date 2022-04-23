@@ -13,17 +13,26 @@
     font-weight: 500;
   }
 
-  &__pages-container{
-      display: flex;
-      flex-direction: column;
-      margin-top: 30px;
+  &__pages-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
   }
 
   &__page {
     font-family: $font-inter;
+    width: fit-content;
     font-size: 16px;
     color: white;
     font-weight: 400;
     padding-bottom: 5px;
+    border-bottom: 2px transparent solid;
+    transition: 300ms ease-out;
+    transition-property: background-color, color;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px white solid;
+    }
   }
 }

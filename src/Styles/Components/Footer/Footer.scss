@@ -15,12 +15,12 @@
     background-color: $color-blue;
   }
 
-  &__content-container {
+  &__upper-left {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
   }
 
@@ -30,14 +30,38 @@
     background-color: white;
   }
 
-  &__content-container {
-    width: 70%;
+  &__upper-right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
     height: 100%;
   }
-
+  
   &__social-container {
-    width: 30%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 170px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+
+    &:hover {
+      background-color: $hover-color;
+    }
   }
 
   &__lower-panel {
@@ -45,7 +69,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    width: 100%;
+    width: 97.8%;
     height: 25%;
     background-color: $primary-color;
     font-family: $font-inter;

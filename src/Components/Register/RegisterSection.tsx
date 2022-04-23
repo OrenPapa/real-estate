@@ -3,7 +3,7 @@ import RegistrationCard from "./RegistrationCard";
 
 function RegisterSection() {
   return (
-    <div className="register-section">
+    <div id="registration" className="register-section">
       <RegistrationCard />
     </div>
   );

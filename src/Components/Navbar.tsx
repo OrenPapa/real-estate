@@ -56,12 +56,23 @@ function Navbar() {
       </div>
       <div className="navbar__right-panel">
         <div className="navbar__action">
-          <button className={`navbar__action-button ${hasColor && "navbar__action-button--color-blue"}`}>List a Property</button>
+          <button
+            className={`navbar__action-button ${
+              hasColor && "navbar__action-button--color-blue"
+            }`}
+          >
+            List a Property
+          </button>
         </div>
         <div className="navbar__auth">
           <div className="navbar__auth-button">Log in</div>
           <div className="navbar__auth-separator">|</div>
-          <div className="navbar__auth-button">Sign up</div>
+          <div
+            onClick={() => window.location.replace("/#registration")}
+            className="navbar__auth-button"
+          >
+            Sign up
+          </div>
         </div>
       </div>
     </div>

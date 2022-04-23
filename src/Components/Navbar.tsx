@@ -7,7 +7,6 @@ function Navbar() {
   const [hasLogoColor, setHasLogoColor] = useState(false);
 
   const onNavbarColorChange = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 80) {
       setHasColor(true);
     } else {
@@ -16,7 +15,6 @@ function Navbar() {
   };
 
   const onLogoColorChange = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 80) {
       setHasLogoColor(true);
     } else {

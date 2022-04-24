@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/main.scss";
+import "../../../Styles/main.scss";
 import CityCard from "./CityCard";
 import { Cities } from "./DiscoverCitiesDummyData";
 

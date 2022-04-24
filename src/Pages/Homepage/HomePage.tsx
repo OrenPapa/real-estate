@@ -1,12 +1,11 @@
 import React from "react";
-import DiscoverCities from "../../Components/DiscoverCities/DiscoverCities";
 import Footer from "../../Components/Footer/Footer";
-import HeaderContent from "../../Components/Header/Header";
-
-import Navbar from "../../Components/Navbar";
-import OurClients from "../../Components/OurClients/OurClients";
-import PartnersSection from "../../Components/PartnersSection/PartnersSection";
-import RegisterSection from "../../Components/Register/RegisterSection";
+import DiscoverCities from "../../Components/Homepage/DiscoverCities/DiscoverCities";
+import HeaderContent from "../../Components/Homepage/Header/Header";
+import OurClients from "../../Components/Homepage/OurClients/OurClients";
+import PartnersSection from "../../Components/Homepage/PartnersSection/PartnersSection";
+import RegisterSection from "../../Components/Homepage/Register/RegisterSection";
+import Navbar from "../../Components/Navbar/Navbar";
 import "../../Styles/Layouts/homepage.scss";
 
 function HomePage() {

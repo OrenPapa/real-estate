@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 
 function RegistrationCard() {
+  const [isChecked, setIsChecked] = useState(false);
+
   return (
     <div className="registration-card">
       <div className="registration-card__upper-panel">
@@ -39,13 +41,19 @@ function RegistrationCard() {
             />
           </div>
           <div className="registration-card__checkbox-container">
-            <input className="registration-card__checkbox" type="checkbox" />
+            <input
+              onClick={() => setIsChecked(!isChecked)}
+              className="registration-card__checkbox"
+              type="checkbox"
+            />
             <div className="registration-card__checkbox-label">
               I accept the terms of use
             </div>
           </div>
           <div className="registration-card__button-container">
-              <button type="submit" className="registration-card__button">Join</button>
+            <button type="submit" className={`${isChecked ? "registration-card__button": "registration-card__button-disabled"}`}>
+              Join
+            </button>
           </div>
         </form>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../Styles/main.scss";
+import "../../../Styles/main.scss";
 
 function HeaderSearchArea() {
   const [buy, setBuy] = useState(true);

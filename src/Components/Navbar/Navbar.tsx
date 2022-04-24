@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "../../Styles/main.scss";
 import { Icon } from "@iconify/react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [hasColor, setHasColor] = useState(false);
   const [hasLogoColor, setHasLogoColor] = useState(false);
+
+  const navigate = useNavigate();
+
+  const onSignInNavigation = () => {
+    let path = "/sign-in";
+    navigate(path);
+  };
 
   const onNavbarColorChange = () => {
     if (window.scrollY >= 80) {
@@ -65,7 +73,9 @@ function Navbar() {
           </button>
         </div>
         <div className="navbar__auth">
-          <div className="navbar__auth-button">Log in</div>
+          <div onClick={onSignInNavigation} className="navbar__auth-button">
+            Log in
+          </div>
           <div className="navbar__auth-separator">|</div>
           <div
             onClick={() => window.location.replace("/#registration")}

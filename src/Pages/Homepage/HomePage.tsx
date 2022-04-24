@@ -6,7 +6,7 @@ import OurClients from "../../Components/Homepage/OurClients/OurClients";
 import PartnersSection from "../../Components/Homepage/PartnersSection/PartnersSection";
 import RegisterSection from "../../Components/Homepage/Register/RegisterSection";
 import Navbar from "../../Components/Navbar/Navbar";
-import "../../Styles/Layouts/homepage.scss";
+import "../../Styles/main.scss";
 
 function HomePage() {
   return (

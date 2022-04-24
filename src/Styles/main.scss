@@ -11,6 +11,10 @@
 @import "./Components/Register/RegisterSection.scss";
 @import "./Components/Register/RegistrationCard.scss";
 @import "./Components/OurClients/OurClients.scss";
+@import "./Components/Authentication/AuthenticationCard.scss";
+@import "./Components/Authentication/SignInForm.scss";
+@import "./Components/Authentication/SignUpForm.scss";
 
 //layouts
-@import "./Layouts/homepage.scss";
+@import "./Layouts/HomePage.scss";
+@import "./Layouts/Authentication.scss";

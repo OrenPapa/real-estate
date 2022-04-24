@@ -1,0 +1,141 @@
+@import "../../Variables/varialbes.scss";
+@import "../../Mixins/Mixins.scss";
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 350px;
+  height: 450px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 24px;
+    font-family: $font-inter;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  &__input-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__double-input-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__single-input-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__small-input {
+    @include input();
+    height: 35px;
+    width: 155px;
+  }
+
+  &__large-input {
+    @include input();
+    height: 35px;
+    width: 250px;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+  }
+
+  &__checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    transition: all 300ms;
+  }
+
+  &__checkbox-label {
+    color: $color-blue;
+    font-size: 16px;
+    font-family: $font-inter;
+    font-weight: 500;
+  }
+
+  &__button-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: $font-inter;
+    font-weight: 500;
+    color: white;
+    background-color: $secondary-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary-color-hover;
+    }
+  }
+
+  &__text-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+  }
+
+  &__text {
+    color: black;
+    font-size: 14px;
+    font-family: $font-inter;
+    font-weight: 500;
+    margin-right: 5px;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-family: $font-inter;
+    font-weight: 700;
+    color: $color-blue;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+  }
+}

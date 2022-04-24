@@ -1,0 +1,17 @@
+@import "../Variables/varialbes.scss";
+
+.authentication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp8196539.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
